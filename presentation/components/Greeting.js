@@ -1,6 +1,5 @@
 import React from "react";
 import styled, { keyframes } from "react-emotion";
-import { Appear, Heading } from "spectacle";
 
 import colors from "../colors";
 
