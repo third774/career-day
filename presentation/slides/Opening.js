@@ -16,7 +16,7 @@ export default (
       size={1}
       bold
     >
-      a.k.a. having fun solving problems
+      having fun solving problems
     </Text>
   </Slide>
 );

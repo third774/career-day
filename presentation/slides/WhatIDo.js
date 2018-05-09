@@ -2,6 +2,8 @@ import React from "react";
 import styled from "react-emotion";
 import { Slide, SlideSet, BlockQuote, Quote, Cite, Text } from "spectacle";
 
+import Greeting from "../components/Greeting";
+
 const InlineText = styled(Text)`
   display: inline;
 `;
@@ -16,10 +18,12 @@ export default (
     </Slide>
     <Slide transition={["fade"]} bgColor="secondary">
       <Text lineHeight={1} textFont="secondary" textColor="primary">
-        I build <InlineText textColor="tertiary">user interfaces</InlineText>{" "}
-        using HTML, CSS, and JavaScript. These are the building blocks of what
-        you ultimately see when browsing the internet.
+        It means building interactive{" "}
+        <InlineText textColor="tertiary">user interfaces</InlineText> using
+        HTML, CSS, and JavaScript. These are the building blocks of what you
+        ultimately see when browsing the internet.
       </Text>
+      <Greeting />
     </Slide>
   </SlideSet>
 );

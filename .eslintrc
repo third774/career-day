@@ -4,6 +4,8 @@
 
 "rules":
   "indent": [2, 2, {"SwitchCase": 1}]
+  "arrow-parens": 0
+  "no-invalid-this": 0
   "filenames/match-regex": false
   "max-len": 0
   "no-magic-numbers": 0
