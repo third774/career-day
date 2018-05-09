@@ -4,6 +4,7 @@
 
 "rules":
   "indent": [2, 2, {"SwitchCase": 1}]
+  "filenames/match-regex": false
   "max-len": 0
   "no-magic-numbers": 0
   "react/prefer-es6-class": 0
