@@ -1,5 +1,5 @@
 import React from "react";
-import { Slide, Heading, List, ListItem } from "spectacle";
+import { Appear, Heading, List, ListItem, Slide } from "spectacle";
 
 export default (
   <Slide transition={["zoom"]} bgColor="primary" textColor="tertiary">
@@ -7,12 +7,24 @@ export default (
       What I like about it
     </Heading>
     <List>
-      <ListItem textFont="secondary">
-        It's challenging. Always solving problems.
-      </ListItem>
-      <ListItem textFont="secondary">It's rewarding. Always learning.</ListItem>
-      <ListItem textFont="secondary">Able to bring app ideas to life</ListItem>
-      <ListItem textFont="secondary">Skills that are in demand</ListItem>
+      <Appear>
+        <ListItem textFont="secondary">
+          It's challenging. Always solving problems.
+        </ListItem>
+      </Appear>
+      <Appear>
+        <ListItem textFont="secondary">
+          It's rewarding. Always learning.
+        </ListItem>
+      </Appear>
+      <Appear>
+        <ListItem textFont="secondary">
+          Able to bring app ideas to life
+        </ListItem>
+      </Appear>
+      <Appear>
+        <ListItem textFont="secondary">Skills that are in demand</ListItem>
+      </Appear>
     </List>
   </Slide>
 );
