@@ -1,16 +1,19 @@
-// Import React
 import React from "react";
-// Import Spectacle Core tags
 import { Deck, Heading, Slide, Text } from "spectacle";
-// Import theme
 import createTheme from "spectacle/lib/themes/default";
+import preloader from "spectacle/lib/utils/preloader";
 import colors from "./colors";
+import images from "./images";
 import FunSideProjects from "./slides/FunSideProjects";
+import LearningResources from "./slides/LearningResources";
 import Opening from "./slides/Opening";
 import Presenter from "./slides/Presenter";
 import WhatIDo from "./slides/WhatIDo";
 import WhatILikeAboutIt from "./slides/WhatILikeAboutIt";
+import WhatItsLike from "./slides/WhatItsLike";
 import WhatYouMightLikeAboutIt from "./slides/WhatYouMightLikeAboutIt";
+
+preloader(images);
 
 // Require CSS
 require("normalize.css");
@@ -41,7 +44,9 @@ export default class Presentation extends React.Component {
       <Deck
         transition={["zoom", "slide"]}
         transitionDuration={500}
+        contentHeight={800}
         theme={theme}
+        progress="number"
       >
         {Opening}
         {Presenter}
@@ -69,9 +74,11 @@ export default class Presentation extends React.Component {
             Standard text
           </Text>
         </Slide>
+        {WhatItsLike}
         {WhatILikeAboutIt}
         {WhatYouMightLikeAboutIt}
         {FunSideProjects}
+        {LearningResources}
       </Deck>
     );
   }

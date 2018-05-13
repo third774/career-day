@@ -1,12 +1,7 @@
 import React from "react";
-import styled from "react-emotion";
-import { Slide, SlideSet, BlockQuote, Quote, Cite, Text } from "spectacle";
-
+import { BlockQuote, Cite, Quote, Slide, SlideSet, Text } from "spectacle";
 import Greeting from "../components/Greeting";
-
-const InlineText = styled(Text)`
-  display: inline;
-`;
+import InlineText from "../components/InlineText";
 
 export default (
   <SlideSet>
