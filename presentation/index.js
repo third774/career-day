@@ -4,7 +4,6 @@ import createTheme from "spectacle/lib/themes/default";
 import preloader from "spectacle/lib/utils/preloader";
 import colors from "./colors";
 import images from "./images";
-import CoolStuffPeopleMake from "./slides/CoolStuffPeopleMake";
 import FunSideProjects from "./slides/FunSideProjects";
 import LearningResources from "./slides/LearningResources";
 import Opening from "./slides/Opening";
@@ -13,8 +12,6 @@ import WhatIDo from "./slides/WhatIDo";
 import WhatILikeAboutIt from "./slides/WhatILikeAboutIt";
 import WhatItsLike from "./slides/WhatItsLike";
 import WhatYouMightLikeAboutIt from "./slides/WhatYouMightLikeAboutIt";
-
-console.log(CoolStuffPeopleMake);
 
 preloader(images);
 
@@ -58,7 +55,6 @@ export default class Presentation extends React.Component {
         {WhatILikeAboutIt}
         {WhatYouMightLikeAboutIt}
         {FunSideProjects}
-        {CoolStuffPeopleMake}
         {LearningResources}
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>

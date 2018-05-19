@@ -34,6 +34,9 @@ class TweetVideo extends React.Component {
 
 export default (
   <SlideSet>
+    <Slide>
+      <Heading>Some of my side projects</Heading>
+    </Slide>
     <Slide bgColor="secondary">
       <Heading margin="0 0 24px 0">Image Focus</Heading>
       <Layout>
@@ -45,6 +48,14 @@ export default (
         Twitter Christmas Lights
       </Heading>
       <TweetVideo />
+    </Slide>
+    <Slide bgColor="secondary">
+      <Layout>
+        <iframe
+          src="https://third774.github.io/elm-tic-tac-toe/"
+          style={{ height: 600, width: "100%", border: "none" }}
+        />
+      </Layout>
     </Slide>
   </SlideSet>
 );
