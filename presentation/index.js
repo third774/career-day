@@ -1,5 +1,5 @@
 import React from "react";
-import { Deck, Heading, Slide, Text } from "spectacle";
+import { Deck, Heading, Slide } from "spectacle";
 import createTheme from "spectacle/lib/themes/default";
 import preloader from "spectacle/lib/utils/preloader";
 import colors from "./colors";
@@ -58,26 +58,8 @@ export default class Presentation extends React.Component {
         {LearningResources}
         <Slide transition={["fade"]} bgColor="tertiary">
           <Heading size={6} textColor="primary" caps>
-            Typography
+            Thank you!
           </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
         </Slide>
       </Deck>
     );
