@@ -2,12 +2,16 @@
   "name": "spectacle-boilerplate",
   "version": "1.0.1",
   "description": "ReactJS Powered Presentation Framework",
+  "homepage": "https://third774.github.io/career-day/",
   "main": "lib/index.js",
   "scripts": {
-    "clean": "rimraf dist",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
+    "clean": "rimraf dist && rimraf deploy",
+    "build":
+      "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
     "lint": "eslint --ext .js,.jsx .",
-    "deploy": "npm run clean & npm run build && surge -p .",
+    "copy": "cpy index.html ./deploy/ && cpy ./dist/**.* ./deploy",
+    "deploy":
+      "npm run clean & npm run build && npm run copy && gh-pages -d deploy",
     "export": "spectacle-renderer --delay 3000",
     "start": "cross-env NODE_ENV=development node server.js"
   },
@@ -36,6 +40,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-runtime": "^6.26.0",
+    "cpy-cli": "^1.0.1",
     "cross-env": "^5.1.0",
     "css-loader": "^0.28.7",
     "eslint": "^4.9.0",
@@ -45,6 +50,7 @@
     "eslint-plugin-react": "^7.4.0",
     "express": "^4.16.2",
     "file-loader": "^1.1.5",
+    "gh-pages": "^1.1.0",
     "html-loader": "^0.5.1",
     "is-buffer": "^1.1.5",
     "markdown-loader": "^2.0.1",
