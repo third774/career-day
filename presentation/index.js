@@ -57,7 +57,7 @@ export default class Presentation extends React.Component {
         {FunSideProjects}
         {LearningResources}
         <Slide transition={["fade"]} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
+          <Heading textColor="primary" caps fit>
             Thank you!
           </Heading>
         </Slide>
