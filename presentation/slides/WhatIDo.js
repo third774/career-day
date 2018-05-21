@@ -8,7 +8,6 @@ import {
   SlideSet,
   Text
 } from "spectacle";
-import Greeting from "../components/Greeting";
 import InlineText from "../components/InlineText";
 import Note from "../components/Note";
 
@@ -31,7 +30,13 @@ export default (
         HTML, CSS, and JavaScript. These languages are the building blocks of
         what you see when browsing websites like Facebook or YouTube.
       </Text>
-      <Greeting />
+      <Notes>
+        <Note>
+          It's all about building what's called user interfaces. I use languages
+          like HTML, CSS, and Javascript which are the building blocks of
+          websites like Facebook and YouTube.
+        </Note>
+      </Notes>
     </Slide>
   </SlideSet>
 );
