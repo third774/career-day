@@ -6,6 +6,7 @@ import {
   Cite,
   Heading,
   Layout,
+  Notes,
   Quote,
   Slide,
   SlideSet,
@@ -13,6 +14,7 @@ import {
 } from "spectacle";
 import colors from "../colors";
 import CodePenIframe from "../components/CodePenIframe";
+import Note from "../components/Note";
 
 const Link = styled("a")`
   color: ${colors.speedRacer.quarternary};
@@ -37,6 +39,13 @@ export default (
           <a href="https://codepen.io">CodePen</a>.
         </CodePenIframe>
       </Layout>
+      <Notes>
+        <Note>
+          Sarah Drasner is an expert in my field and specializes in something
+          called vector graphics. Here is an animated Wall-E graphic she made
+          that responds to mouse movements.
+        </Note>
+      </Notes>
     </Slide>
     <Slide bgColor="primary">
       <Heading margin={24} textColor="quarternary">
@@ -84,6 +93,14 @@ export default (
           </Cite>
         </BlockQuote>
       </Appear>
+      <Notes>
+        <Note>
+          A 13 year old kid named Aiden Horwitz here in Austin built something I
+          think is pretty awesome - a website to help dogs who are up for
+          adoption find good homes. Users fill out a survey answer questions
+          about their lives, and are matched with dogs based on the answers.
+        </Note>
+      </Notes>
     </Slide>
   </SlideSet>
 );
